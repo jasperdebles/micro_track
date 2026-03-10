@@ -28,11 +28,14 @@
 
             <flux:sidebar.nav>
                 <flux:sidebar.group :heading="__('Daily Routine')" class="grid">
-                    <flux:sidebar.item icon="check" :href="route('tasks')" :current="request()->routeIs('tasks')" wire:navigate>
+                    <flux:sidebar.item icon="check" :href="route('tasks.index')" :current="request()->routeIs('tasks.index')" wire:navigate>
                         {{ __('Tasks') }}
                     </flux:sidebar.item>
                     <flux:sidebar.item icon="heart" :href="route('nutrition')" :current="request()->routeIs('nutrition')" wire:navigate>
                         {{ __('Nutrition') }}
+                    </flux:sidebar.item>
+                    <flux:sidebar.item icon="heart" :href="route('exercise')" :current="request()->routeIs('exercise')" wire:navigate>
+                        {{ __('Exercise') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
