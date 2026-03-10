@@ -1,0 +1,9 @@
+<x-layouts.app>
+
+<div class="p-6">
+    <h1 class="text-2xl font-bold mb-4">Weather</h1>
+
+    <x-weather :weather="$weather" />
+</div>
+
+</x-layouts.app>
